@@ -1,29 +1,29 @@
 # API Testing
-GET http://localhost:3000/
+GET http://localhost:8080/
 
 ###
 # GET ALL NOTES
-GET http://localhost:3000/api/v1/notes
+GET http://localhost:8080/api/v1/notes
 Content-Type: application/json
 
 ###
 # GET NOTE BY ID
-GET http://localhost:3000/api/v1/notes/3
+GET http://localhost:8080/api/v1/notes/3
 Content-Type: application/json
 
 ###
 # CREATE NOTE
-POST http://localhost:3000/api/v1/notes
+POST http://localhost:8080/api/v1/notes
 Content-Type: application/json
 
 {
-  "judul": "Belajar Backend yuk",
+  "judul": "Belajar Backend docker",
   "isi": "Gacor"
 }
 
 ###
 # UPDATE NOTE
-PUT http://localhost:3000/api/v1/notes/8
+PUT http://localhost:8080/api/v1/notes/8
 Content-Type: application/json
 
 {
@@ -33,5 +33,5 @@ Content-Type: application/json
 
 ###
 # DELETE NOTE
-DELETE http://localhost:3000/api/v1/notes/8
+DELETE http://localhost:8080/api/v1/notes/8
 Content-Type: application/json

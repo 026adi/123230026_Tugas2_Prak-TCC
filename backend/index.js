@@ -15,9 +15,11 @@ app.get("/", (req, res) => {
 
 app.use("/api/v1/notes", notesRoutes);
 
+const PORT = process.env.PORT || 8080;
 sequelize.sync().then(() => {
   console.log("Database synced");
-  app.listen(process.env.PORT, () => {
-    console.log("Server running on port " + process.env.PORT);
+
+  app.listen(PORT, () => {
+    console.log("Server running on port " + PORT);
   });
 });
