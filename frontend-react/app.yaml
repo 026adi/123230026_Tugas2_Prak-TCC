@@ -1,10 +1,12 @@
 runtime: nodejs22
 
-handlers:
-  - url: /(.*\..+)$
-    static_files: dist/\1
-    upload: dist/(.*\..+)$
+service: adi-frontend
 
+handlers:
   - url: /.*
     static_files: dist/index.html
     upload: dist/index.html
+
+  - url: /(.*)
+    static_files: dist/\1
+    upload: dist/(.*)
