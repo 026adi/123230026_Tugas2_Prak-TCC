@@ -3,7 +3,7 @@ import axios from "axios";
 
 function App() {
   const API =
-    "https://notes-backend-764024000152.asia-southeast2.run.app/api/v1/notes";
+    "https://notes-backend-764024000152.us-central1.run.app/api/v1/notes";
 
   const [notes, setNotes] = useState([]);
   const [judul, setJudul] = useState("");
